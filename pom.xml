@@ -24,7 +24,7 @@
   </parent>
   <groupId>org.apache.accumulo</groupId>
   <artifactId>accumulo-project</artifactId>
-  <version>1.7.0.2.6.5.0-SNAPSHOT</version>
+  <version>1.7.0.2.6.5.310-2</version>
   <packaging>pom</packaging>
   <name>Apache Accumulo</name>
   <description>Apache Accumulo is a sorted, distributed key/value store based on Google's BigTable design. It is built on top of Apache Hadoop, Zookeeper, and Thrift. It features a few novel improvements on the BigTable design in the form of cell-level access labels and a server-side programming mechanism that can modify key/value pairs at various points in the data management process.</description>
@@ -135,7 +135,7 @@
     <!-- surefire/failsafe plugin option -->
     <forkCount>1</forkCount>
     <!-- overwritten in hadoop profiles -->
-    <hadoop.version>2.7.3.2.6.5.0-SNAPSHOT</hadoop.version>
+    <hadoop.version>2.7.3.2.6.5.310-2</hadoop.version>
     <htrace.version>3.1.0-incubating</htrace.version>
     <httpclient.version>3.1</httpclient.version>
     <it.failIfNoSpecifiedTests>false</it.failIfNoSpecifiedTests>
@@ -160,7 +160,7 @@
     <!-- Thrift version -->
     <thrift.version>0.9.1</thrift.version>
     <!-- ZooKeeper version -->
-    <zookeeper.version>3.4.6.2.6.5.0-SNAPSHOT</zookeeper.version>
+    <zookeeper.version>3.4.6.2.6.5.310-2</zookeeper.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -389,9 +389,9 @@
         <!-- Specifically depend on this version of minikdc to avoid having
            to increase out normal hadoop dependency; minikdc not available prior
            to 2.3.0 -->
-        <?SORTPOM IGNORE?>
+        
         <version>${hadoop.version}</version>
-        <?SORTPOM RESUME?>
+        
         <!--$NO-MVN-MAN-VER$-->
       </dependency>
       <dependency>
@@ -1455,7 +1455,7 @@
         <!-- Denotes intention and allows the enforcer plugin to pass when
              the user is relying on default behavior; won't work to activate profile -->
         <hadoop.profile>2</hadoop.profile>
-        <hadoop.version>2.7.3.2.6.5.0-SNAPSHOT</hadoop.version>
+        <hadoop.version>2.7.3.2.6.5.310-2</hadoop.version>
         <httpclient.version>3.1</httpclient.version>
         <slf4j.version>1.7.5</slf4j.version>
       </properties>
@@ -1472,7 +1472,7 @@
         </property>
       </activation>
       <properties>
-        <hadoop.version>2.7.3.2.6.5.0-SNAPSHOT</hadoop.version>
+        <hadoop.version>2.7.3.2.6.5.310-2</hadoop.version>
         <httpclient.version>3.1</httpclient.version>
         <slf4j.version>1.7.5</slf4j.version>
       </properties>
